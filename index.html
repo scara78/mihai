@@ -60,9 +60,9 @@ const searchbtnElem = document.getElementById('search-btn')
 const options = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '04f144a486mshf8408ceb53634b3p1ac06cjsnfb9e4811bf3f',
-        'X-RapidAPI-Host': 'youtube-mp3-download1.p.rapidapi.com'
-    }
+		'X-RapidAPI-Key': 'c0b528a5c0msh24e6fd39a0b48ccp13671bjsnbabe8742260f',
+		'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
+	}
 };
 let songAppeared = false
 //for not creating two div in HTML
@@ -114,7 +114,7 @@ function setDuration (seconds) {
     }
 }
 function api (videoID) {
-    fetch(`https://youtube-mp3-download1.p.rapidapi.com/dl?id=${videoID}`, options)
+    fetch(`https://youtube-mp36.p.rapidapi.com/dl?id=${videoID}`, options)
         .then(response => response.json())
         .then(response => {
             if(response.status == 'fail'){
@@ -164,7 +164,7 @@ function customLoader(){
 }
     </script>
     <footer>
-        <p>Made by RoBdUcK</p>
+        <p>Made by CristiScara For Mihai M</p>
     </footer>
 </body>
 </html>
